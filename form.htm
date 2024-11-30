@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Image to PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff; /* White background */
+        }
+        #container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: linear-gradient(145deg, #003366, #002244); /* Blue-black gradient */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #003366; /* Dark blue */
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #002244; /* Blue-black */
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <h2 style="color: white;">IT BIENVENU PDF</h2>
+    <p>Follow for more projects <a href="https://www.youtube.com/@ITBIENVENU">here</a></p>
+    <input type="file" id="fileInput" accept="image/*" />
+    <br/>
+    <button id="downloadBtn">Download PDF</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script src="index.js">
+    </script>
+
+</body>
+</html>
